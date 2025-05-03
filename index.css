@@ -1,28 +1,53 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: #f9f9f9;
   }
   
   header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px 50px;
     background: white;
+  grid-column: auto;
   }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+.header {
+  flex-direction: column;
+  text-align: center;
+}
+.signup {
+width: 100%;
+margin: 0 auto;
+}
+  }
+  img {
+    max-width:100% ;
+    height: auto;
+    grid-column: auto;
+  }
+
   .logo-container {
   display: flex;
   align-items: center;
   justify-content: center; /* Horizontally center */
-  margin-top: 40px; /* Optional: space from top */
+  margin-top: 0 auto; /* Optional: space from top */
 }
 
 .logo {
   width: 24px;  /* Adjust size as needed */
   height: auto;
   margin-right: 8px; /* Space between logo and text */
+  margin: auto;
 }
 
 
@@ -37,7 +62,7 @@ body {
     padding: 20px 30px;
     width: fit-content;
     max-width: 900px;
-    margin: 40px auto;
+    margin: 0 auto;
     gap: 30px;
     font-family: 'Poppins', sans-serif;
   }
@@ -64,7 +89,7 @@ body {
   .booking-option p {
     font-size: 13px;
     color: #666;
-    margin: 0;
+    margin: 0 auto;
   }
   
   .booking-button button {
@@ -77,17 +102,14 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin: 0 auto;
   }
   
   .booking-button button:hover {
     background-color: #e05500;
   }
   
-  
 
- 
-
-  
   nav a {
     margin: 0 10px;
     text-decoration: none;
@@ -107,6 +129,7 @@ body {
     padding: 10px 20px;
     border-radius: 6px;
     cursor: pointer;
+    margin: auto;
   }
 
 
@@ -118,6 +141,7 @@ body {
     padding: 10px 20px;
     border-radius: 6px;
     cursor: pointer;
+    margin: auto;
   }
   
   main {
@@ -177,6 +201,7 @@ top: 114px;
   .image-content {
     position: relative;
     width: 40%;
+    margin: auto;
   }
   
   .image-content img {
@@ -613,12 +638,13 @@ top: 114px;
     text-align: center;
     color: white;
     border-radius: 0 0 10px 10px;
+    margin: auto;
   }
   
   .subscribe-box h2 {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 0 auto;
   }
   
   .subscribe-box span {
